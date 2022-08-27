@@ -1,12 +1,19 @@
-#include<stdio.h>
-void main()
-{
-    int i, num,sum;
-   for(i=1;i<=num;i++)
-   {
-    printf("the number is:");
-    scanf("%d",&num);
-    sum=sum+i;
-    printf("%d",sum);
-   }
+#include <stdio.h>
+
+int main() {
+    int x, sum = 0, y;
+    
+    printf ("Enter the integer number::\n");
+    scanf ("%d", &x);
+    
+    while (x > 0) {
+        y = x%10;    
+        sum = sum+y;    
+        x = x/10;    
+    }
+    
+    printf ("%d\n", sum);
+    return 0;
 }
+
+
